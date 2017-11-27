@@ -7,7 +7,7 @@ import java.util.Scanner;
 * @version 2017年11月27日 下午3:43:24
 * @describe No后面的数字对应牛客网的题目序号,A+B和C (15)
 */
-public class No1001 {
+public class No1011 {
 	public static void main(String[] args) {
 		int T = 0,i=1;
 		long a,b,c;
