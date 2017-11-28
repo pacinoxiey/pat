@@ -18,6 +18,7 @@ public class No1001 {
 			} else {
 				num = num / 2;
 			}
+			System.out.println(num);
 			step += 1;
 		}
 		System.out.println(step);
