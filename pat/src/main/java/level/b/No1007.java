@@ -1,15 +1,13 @@
 package level.b;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 /**
- * @author xiey
- * @version 2017年11月27日 下午11:25:02
- * @describe 素数 只有1和本身能够整除的数
- */
-public class Main {
+* @author xiey
+* @version 2017年11月30日 上午12:00:34
+* @describe 素数 只有1和本身能够整除的数
+*/
+public class No1007 {
 	public static void main(String[] args) {
 		int num;
 		Scanner in = new Scanner(System.in);
@@ -40,7 +38,6 @@ public class Main {
 				return false;
 			}
 		}
-
 		return true;
 	}
 }
