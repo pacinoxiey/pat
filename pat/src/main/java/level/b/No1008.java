@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 /**
  * @author xiey
- * @version 2017年11月27日 下午11:25:02
- * @describe
+ * @version 2017年11月30日 上午12:40:57
+ * @describe 数组位移
  */
-public class Main {
+public class No1008 {
 	public static void main(String[] args) {
 		int num, index, flag;
 		Scanner in = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Main {
 			if (index < num) {
 				arr[index] = in.nextInt();
 			} else {
-				arr[index%num] = in.nextInt();
+				arr[index % num] = in.nextInt();
 			}
 			index++;
 		}
