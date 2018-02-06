@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+import level.GsonUtil;
+
 /**
  * @author xiey
  * @version 2017年11月28日 下午7:45:35
@@ -36,9 +38,12 @@ public class No1004 implements Comparable<No1004> {
 		}
 
 		Collections.sort(list);
-
-		System.out.println(list.get(0).name + " " + list.get(0).score);
-		System.out.println(list.get(list.size() - 1).name + " " + list.get(list.size() - 1).score);
+		
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(GsonUtil.getInstance().toJson(list.get(i)));
+		}
+//		System.out.println(list.get(0).name + " " + list.get(0).score);
+//		System.out.println(list.get(list.size() - 1).name + " " + list.get(list.size() - 1).score);
 	}
 
 	@Override
