@@ -19,8 +19,12 @@ public class Main {
 		for (int i = 0; i < string.length(); i++) {
 			if (string.charAt(i) == 'P') {
 				indexOfP = i;
-			}else if (string.charAt(i)=='A') {
+			} else if (string.charAt(i) == 'T') {
 				indexOfA = i;
+			} else if (string.charAt(i) == 'A') {
+
+			} else {
+				System.out.println("NO");
 			}
 		}
 

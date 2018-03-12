@@ -1,31 +1,33 @@
 package level.b;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
  * @author xiey
  * @version 2017年11月27日 下午11:25:02
- * @describe
+ * @describe test
  */
 public class Main {
-	public static void main(String[] args) {
-		int num, index, flag;
-		Scanner in = new Scanner(System.in);
-		num = flag = in.nextInt();
-		index = in.nextInt();
-		int[] arr = new int[num];
-		while (flag-- > 0) {
-			if (index < num) {
-				arr[index] = in.nextInt();
-			} else {
-				arr[index%num] = in.nextInt();
-			}
-			index++;
-		}
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String[] arr = in.nextLine().split(" ");
 
-		for (int i = 0; i < arr.length - 1; i++) {
-			System.out.print(arr[i] + " ");
-		}
-		System.out.println(arr[arr.length - 1]);
-	}
+        List<Integer> a1 = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            int num = Integer.parseInt(arr[i])%5;
+
+            if (num==0) {
+
+            }
+
+            if (num % 5 == 0 && num % 2 == 0) {
+                //A1
+                a1.add(num);
+            }
+        }
+
+
+    }
 }
